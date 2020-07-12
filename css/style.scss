@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+
+    .panel {
+        height: 100vh;
+        background: #7ed6df;
+
+        .box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 80%;
+            height: 20%;
+            margin: 10px auto;
+            border-radius: 10px;
+            cursor: pointer;
+            background: #f6e58d;
+            border: 2px solid none;
+            transition: background .3s ease-in-out,
+                        border .3s ease-in-out;
+
+            &:hover {
+                background: #ccc;
+                border: 2px solid #f6e58d;
+            }
+
+            .icon {
+                width: 70px;
+                height: 70px;
+                border-radius: 20px;
+            }
+        }
+    }
+}
